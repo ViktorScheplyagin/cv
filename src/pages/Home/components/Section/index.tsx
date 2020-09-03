@@ -1,17 +1,27 @@
 import React from 'react';
 import { Box } from '@chakra-ui/core';
+import SectionHeading from './SectionHeading';
 
-const Section: React.FC<any> = ({ children, ...props }) => {
+type SectionProps = {
+  heading?: string,
+  children: any,
+};
+
+const Section: React.FC<SectionProps & any> = ({ heading, children, ...props }) => {
   return (
     <Box
-      w="100%"
       py={[8]}
+      w="100%"
       // minH="100vh" TODO: make CV like a landing slider
       {...props}
     >
-      {children}
+      <SectionHeading>{heading}</SectionHeading>
+      <Box>
+        {children}
+      </Box>
     </Box>
   )
 };
 
+export { SectionHeading };
 export default Section;
