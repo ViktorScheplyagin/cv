@@ -1,13 +1,17 @@
 import React from 'react';
-import Screen from './components/Screen';
+import Section from './components/Section';
 import Intro from './components/Intro';
+import SectionHeading from './components/SectionHeading';
 
 const HomePage: React.FC = () => {
   return (
     <>
-      <Screen bg="#000">
+      <Section bg="#000">
         <Intro />
-      </Screen>
+      </Section>
+      <Section>
+        <SectionHeading>Experience</SectionHeading>
+      </Section>
     </>
   )
 };

@@ -8,7 +8,7 @@ const dividerStyle: any = {
 };
 
 
-const ScreenHeading: React.FC<{ children: string }> = ({ children }) => {
+const SectionHeading: React.FC<{ children: string }> = ({ children }) => {
   return (
     <Flex align="center">
       <Divider {...dividerStyle} />
@@ -23,4 +23,4 @@ const ScreenHeading: React.FC<{ children: string }> = ({ children }) => {
   )
 };
 
-export default ScreenHeading;
+export default SectionHeading;

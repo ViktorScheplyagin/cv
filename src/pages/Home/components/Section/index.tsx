@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box } from '@chakra-ui/core';
 
-const Screen: React.FC<any> = ({ children, ...props }) => {
+const Section: React.FC<any> = ({ children, ...props }) => {
   return (
     <Box
       w="100%"
@@ -14,4 +14,4 @@ const Screen: React.FC<any> = ({ children, ...props }) => {
   )
 };
 
-export default Screen;
+export default Section;
