@@ -1,0 +1,81 @@
+import React from 'react';
+import { MdLocationOn, MdMailOutline } from 'react-icons/md';
+import { FaLinkedinIn } from 'react-icons/fa';
+import myPhoto from 'assets/my_photo.jpg';
+import {
+  Flex,
+  Avatar,
+  Heading,
+  List,
+  ListItem,
+  ListIcon,
+  Link,
+  Box,
+} from '@chakra-ui/core';
+
+
+const textStyles: any = {
+  display: "inline",
+  color: "#fff",
+  fontWeight: "600",
+};
+
+const iconStyles: any = {
+  color: "#fff",
+};
+
+const Intro: React.FC = () => {
+  return (
+    <Flex>
+      <Avatar
+        src={myPhoto}
+        name="Viktor Shcheplyagin"
+        ml={[8]}
+        mr={[16]}
+        size="2xl"
+        w={["300px"]}
+        h={["300px"]}
+      />
+
+      <Flex
+        direction="column"
+        justify="center"
+        textTransform="uppercase"
+      >
+        <Flex direction="column" mb={[8]} {...textStyles}>
+          <Heading>Viktor Shcheplyagin</Heading>
+          <Box>Front-End Developer</Box>
+        </Flex>
+
+        <List>
+          <ListItem>
+            <ListIcon {...iconStyles} icon={MdLocationOn} />
+            <Box {...textStyles}>Odessa, Ukraine</Box>
+          </ListItem>
+
+          <ListItem>
+            <ListIcon {...iconStyles} icon={MdMailOutline} />
+            <Box {...textStyles}>silverman995@gmail.com</Box>
+          </ListItem>
+
+          <ListItem>
+            <ListIcon {...iconStyles} icon="phone" />
+            <Box {...textStyles}>+38 066 243 0114</Box>
+          </ListItem>
+
+          <ListItem>
+            <ListIcon {...iconStyles} icon={FaLinkedinIn} />
+            <Link
+              href="https://www.linkedin.com/in/viktor-shh/"
+              isExternal
+            >
+              <Box {...textStyles}>LinkedIn/In/Viktor-Shh</Box>
+            </Link>
+          </ListItem>
+        </List>
+      </Flex>
+    </Flex>
+  )
+};
+
+export default Intro;
