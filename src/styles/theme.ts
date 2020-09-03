@@ -32,17 +32,17 @@ const customTheme = {
   // icons: {},
   // letterSpacings: {},
   // lineHeights: {},
-
+  
   fontWeights: {
     ...theme.fontWeights,
 
     // hairline: number;
     // thin: number;
     // light: number;
-    normal: 400,
-    medium: 500,
+    // normal: number,
+    // medium: number;
     // semibold: number;
-    bold: 700,
+    // bold: number,
     // extrabold: number;
     // black: number;
   },
