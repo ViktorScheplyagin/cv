@@ -10,7 +10,10 @@ const dividerStyle: any = {
 
 const SectionHeading: React.FC<{ children: string }> = ({ children }) => {
   return (
-    <Flex align="center">
+    <Flex
+      display={children ? "flex" : "none"}
+      align="center"
+    >
       <Divider {...dividerStyle} />
       <Text
         fontSize="xl"

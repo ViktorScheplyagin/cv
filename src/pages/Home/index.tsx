@@ -1,7 +1,10 @@
 import React from 'react';
 import Section from './components/Section';
 import Intro from './components/Intro';
-import SectionHeading from './components/SectionHeading';
+import Experience from './components/Experience';
+import Skills from './components/Skills';
+import Education from './components/Education';
+import Summary from './components/Summary';
 
 const HomePage: React.FC = () => {
   return (
@@ -9,8 +12,21 @@ const HomePage: React.FC = () => {
       <Section bg="#000">
         <Intro />
       </Section>
-      <Section>
-        <SectionHeading>Experience</SectionHeading>
+
+      <Section heading="Experience">
+        <Experience />
+      </Section>
+
+      <Section heading="Skills">
+        <Skills />
+      </Section>
+
+      <Section heading="Education">
+        <Education />
+      </Section>
+
+      <Section heading="Summary">
+        <Summary />
       </Section>
     </>
   )
