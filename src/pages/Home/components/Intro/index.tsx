@@ -44,10 +44,10 @@ const Intro: React.FC = () => {
       >
         <Flex direction="column" mb={[8]} {...textStyles}>
           <Heading>Viktor Shcheplyagin</Heading>
-          <Box>Front-End Developer</Box>
+          <Box>Strong Junior Front-End Developer</Box>
         </Flex>
 
-        <List>
+        <List spacing={[2]}>
           <ListItem>
             <ListIcon {...iconStyles} icon={MdLocationOn} />
             <Box {...textStyles}>Odessa, Ukraine</Box>
