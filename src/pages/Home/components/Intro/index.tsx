@@ -4,7 +4,7 @@ import { FaLinkedinIn } from 'react-icons/fa';
 import myPhoto from 'assets/my_photo.jpg';
 import {
   Flex,
-  Avatar,
+  Image,
   Heading,
   List,
   ListItem,
@@ -27,14 +27,12 @@ const iconStyles: any = {
 const Intro: React.FC = () => {
   return (
     <Flex>
-      <Avatar
+      <Image
         src={myPhoto}
-        name="Viktor Shcheplyagin"
+        rounded="full"
         ml={[8]}
         mr={[16]}
-        size="2xl"
-        w={["300px"]}
-        h={["300px"]}
+        size="300px"
       />
 
       <Flex
