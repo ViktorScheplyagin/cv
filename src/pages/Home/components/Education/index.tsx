@@ -4,16 +4,32 @@ import { SimpleGrid, Flex, Text, Image, Box } from '@chakra-ui/core';
 
 const Education: React.FC = () => {
   return (
-    <SimpleGrid columns={[1, 2]} textTransform="uppercase">
-      <Flex direction="column" align="center" justify="space-between">
-        <Image size="50px" src={logoOnpu} mb={4} />
+    <SimpleGrid
+      columns={[1, null, 2]}
+      textTransform="uppercase"
+      spacing={[4, null, 0]}
+    >
+      <Flex
+        direction="column"
+        align="center"
+        justify="space-between"
+      >
+        <Image
+          size={["120px", null, "50px"]}
+          src={logoOnpu}
+          mb={[2, null, 4]}
+        />
         <Text fontWeight="semibold">
           Odessa National Polytechnic University
         </Text>
       </Flex>
 
-      <Flex direction="column" align="center" justify="center">
-        <Box>
+      <Flex
+        direction="column"
+        align="center"
+        justify="center"
+      >
+        <Box textAlign={["center", null, "left"]}>
           <Text fontWeight="semibold">
             System Engineering
           </Text>
