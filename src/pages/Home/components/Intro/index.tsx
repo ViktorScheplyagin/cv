@@ -11,6 +11,7 @@ import {
   ListIcon,
   Link,
   Box,
+  SimpleGrid,
 } from '@chakra-ui/core';
 
 
@@ -18,6 +19,7 @@ const textStyles: any = {
   display: "inline",
   color: "#fff",
   fontWeight: "600",
+  textAlign: ["center", null, "left"],
 };
 
 const iconStyles: any = {
@@ -26,19 +28,21 @@ const iconStyles: any = {
 
 const Intro: React.FC = () => {
   return (
-    <Flex>
-      <Image
-        src={myPhoto}
-        rounded="full"
-        ml={[8]}
-        mr={[16]}
-        size="300px"
-      />
+    <SimpleGrid columns={[1, null, 2]}>
+      <Flex align="center" justify="center">
+        <Image
+          src={myPhoto}
+          rounded="full"
+          size={["200px", null, "300px"]}
+        />
+      </Flex>
 
       <Flex
         direction="column"
+        align={["center", null, "flex-start"]}
         justify="center"
         textTransform="uppercase"
+        mt={[8, null, 0]}
       >
         <Flex direction="column" mb={[8]} {...textStyles}>
           <Heading>Viktor Shcheplyagin</Heading>
@@ -72,7 +76,7 @@ const Intro: React.FC = () => {
           </ListItem>
         </List>
       </Flex>
-    </Flex>
+    </SimpleGrid>
   )
 };
 
