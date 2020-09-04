@@ -5,18 +5,16 @@ import {
   Flex, 
   AccordionIcon, 
   AccordionPanel,
+  Text,
 } from '@chakra-ui/core';
 
 
 const SkillsCategory: React.FC<{ header: string, isInitialOpen?: boolean }> = ({ header, isInitialOpen, children }) => {
   return (
-    <AccordionItem defaultIsOpen={isInitialOpen} border="none">
-      <AccordionHeader
-        bgImage="linear-gradient(to right, #eee, transparent)"
-        transition="background ease 0.3s"
-      >
+    <AccordionItem defaultIsOpen={isInitialOpen}>
+      <AccordionHeader>
         <Flex w="full" justifyContent="space-between">
-          {header}
+          <Text fontWeight="semibold">{header}</Text>
           <AccordionIcon />
         </Flex>
       </AccordionHeader>
