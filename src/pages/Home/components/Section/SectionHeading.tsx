@@ -13,6 +13,7 @@ const SectionHeading: React.FC<{ children: string }> = ({ children }) => {
     <Flex
       display={children ? "flex" : "none"}
       align="center"
+      mb={12}
     >
       <Divider {...dividerStyle} />
       <Text
