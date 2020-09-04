@@ -13,7 +13,7 @@ const Skills: React.FC = () => {
         My hard skills will be here...
       </SkillsCategory>
 
-      <SkillsCategory isInitialOpen header="soft">
+      <SkillsCategory isInitialOpen header="Soft">
         My soft skills will be here...
       </SkillsCategory>
     </Accordion>
