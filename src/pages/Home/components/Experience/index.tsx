@@ -1,10 +1,10 @@
 import React from 'react';
-import { Flex, Heading, Text } from '@chakra-ui/core';
+import { Flex, SimpleGrid, Heading, Text } from '@chakra-ui/core';
 
 const Experience: React.FC = () => {
   return (
-    <Flex mx={[6]}>
-      <Flex direction="column" w="50%">
+    <SimpleGrid columns={[1, null, 2]} mx={[4, null, 6]} spacing={[4, null, 0]}>
+      <Flex direction="column" align="center" justify="center">
         <Heading>KikiDevelopment</Heading>
         <Text
           color="gray.600"
@@ -15,12 +15,12 @@ const Experience: React.FC = () => {
         </Text>
       </Flex>
 
-      <Flex w="50%">
-        <Text>
+      <Flex align="center" justify="center">
+        <Text textAlign={["center", null, "left"]}>
           With which projects we worked, provide short description for each project
         </Text>
       </Flex>
-    </Flex>
+    </SimpleGrid>
   )
 };
 
