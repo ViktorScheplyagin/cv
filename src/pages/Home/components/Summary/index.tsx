@@ -1,11 +1,25 @@
 import React from 'react';
 import { Text, Box, } from '@chakra-ui/core';
-import TechnologyLabel from './TechnologyLabel';
+import TechnologyLabel from 'shared_components/TechnologyLabel';
 
+function calcAge(born: Date): number {
+  const date: Date = new Date();
+
+  date.setFullYear(date.getFullYear() - born.getFullYear());
+  date.setMonth(date.getMonth() - born.getMonth());
+  date.setDate(date.getDate() - born.getDate());
+
+  return date.getFullYear();
+}
 
 const Summary: React.FC = () => {
+  const meBorn: Date = new Date("1995-12-01");
+
   return (
     <Box mx="auto" w={["80%", "90%"]}>
+      <Text>
+        I Born 01.12.1995 ({ calcAge(meBorn) } y. o.). Married. Have a son. Also I like street workout.
+      </Text>
       <Text>
         I like to develop a frontend, using
         <TechnologyLabel
