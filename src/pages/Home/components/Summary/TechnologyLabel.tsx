@@ -5,13 +5,18 @@ import Logo from './Logo';
 
 type TechnologyProps = {
   name: string;
-  icon?: string;
+  icon?: any;
   description?: string;
 };
 
 
-const Technology: React.FC<TechnologyProps> = ({ name, icon, description }) => (
-  <Tooltip aria-label="" label={description} placement="bottom">
+const TechnologyLabel: React.FC<TechnologyProps> = ({ name, icon, description }) => (
+  <Tooltip 
+    display={description ? "block" : "none"} 
+    aria-label="" 
+    label={description} 
+    placement="bottom"
+  >
     <Box d="inline" alignItems="flex-end">
       <Code mx={1} px={1}>
         <Logo name={name} icon={icon} size={24} />
@@ -20,4 +25,4 @@ const Technology: React.FC<TechnologyProps> = ({ name, icon, description }) => (
   </Tooltip>
 );
 
-export default Technology;
+export default TechnologyLabel;
