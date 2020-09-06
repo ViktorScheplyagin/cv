@@ -1,6 +1,5 @@
 import React from 'react';
 import { 
-  AccordionItem, 
   AccordionHeader, 
   Flex, 
   AccordionIcon, 
@@ -9,9 +8,9 @@ import {
 } from '@chakra-ui/core';
 
 
-const SkillsCategory: React.FC<{ header: string, isInitialOpen?: boolean }> = ({ header, isInitialOpen, children }) => {
+const SkillsCategory: React.FC<{ header: string, }> = ({ header, children }) => {
   return (
-    <AccordionItem defaultIsOpen={isInitialOpen}>
+    <>
       <AccordionHeader>
         <Flex w="full" justifyContent="space-between">
           <Text fontWeight="semibold">{header}</Text>
@@ -21,7 +20,7 @@ const SkillsCategory: React.FC<{ header: string, isInitialOpen?: boolean }> = ({
       <AccordionPanel>
         {children}
       </AccordionPanel>
-    </AccordionItem>
+    </>
   )
 }
 
