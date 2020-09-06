@@ -11,7 +11,7 @@ import {
   Link,
   Icon,
 } from '@chakra-ui/core';
-import TechnologyLabel from '../../Summary/TechnologyLabel';
+import TechnologyLabel from 'shared_components/TechnologyLabel';
 
 
 type DescriptionProps = {
@@ -72,7 +72,7 @@ const Description: React.FC<DescriptionProps> = ({ title, points, technologies, 
                       key={idx}
                       {...technology}
                     />
-                    {idx < technologies.length - 1 ? "," : ""}
+                    {idx < technologies.length - 1 ? ", " : ""}
                   </>
                 ))}
               </Box>
