@@ -13,13 +13,14 @@ const Education: React.FC = () => {
         direction="column"
         align="center"
         justify="space-between"
+        mb={[2, 0]}
       >
         <Image
           size={["120px", null, "50px"]}
           src={logoOnpu}
           mb={[2, null, 4]}
         />
-        <Text fontWeight="semibold">
+        <Text textAlign={["center", "left"]} fontWeight="semibold">
           Odessa National Polytechnic University
         </Text>
       </Flex>
