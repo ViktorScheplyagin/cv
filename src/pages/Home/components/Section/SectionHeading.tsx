@@ -4,7 +4,9 @@ import { Flex, Text, Divider } from '@chakra-ui/core';
 
 const dividerStyle: any = {
   width: "full",
-  mx: [4]
+  mx: [4],
+  borderWidth: "2px",
+  borderColor: "gray.600",
 };
 
 
@@ -17,8 +19,10 @@ const SectionHeading: React.FC<{ children: string }> = ({ children }) => {
     >
       <Divider {...dividerStyle} />
       <Text
-        fontSize="xl"
-        fontWeight="semibold"
+        fontSize="2xl"
+        fontWeight="bold"
+        textTransform="uppercase"
+        color="gray.700"
       >
         {children}
       </Text>
