@@ -16,9 +16,6 @@ import {
 } from 'react-icons/fa';
 
 
-//TODO fill text content for skills
-//TODO deploy
-
 const Portfolio: React.FC = () => {
   return (
     <Accordion w="full" allowMultiple>
@@ -91,6 +88,7 @@ const Portfolio: React.FC = () => {
           ]}
           technologies={[
             { name: "React", icon: FaReact },
+            { name: "MobX", icon: "mobx" },
             { name: "React Router", icon: SiReactrouter },
             { name: "Chakra UI" },
             { name: "Formik" },
