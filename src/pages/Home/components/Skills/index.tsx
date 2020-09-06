@@ -1,6 +1,8 @@
 import React from 'react';
-import { Accordion } from '@chakra-ui/core';
+import { Accordion, AccordionItem } from '@chakra-ui/core';
 import SkillsCategory from './SkillsCategory';
+import SkillsList from './SkillsList';
+import skills from './skills.json';
 
 
 const Skills: React.FC = () => {
@@ -8,14 +10,19 @@ const Skills: React.FC = () => {
     <Accordion
       mx={[4]}
       allowMultiple
+      defaultIndex={[0, 1]}
     >
-      <SkillsCategory isInitialOpen header="Hard">
-        My hard skills will be here...
-      </SkillsCategory>
+      <AccordionItem>
+        <SkillsCategory header="Hard">
+          <SkillsList skills={skills.hard} />
+        </SkillsCategory>
+      </AccordionItem>
 
-      <SkillsCategory isInitialOpen header="Soft">
-        My soft skills will be here...
-      </SkillsCategory>
+      <AccordionItem>
+        <SkillsCategory header="Soft">
+          <SkillsList skills={skills.soft} />
+        </SkillsCategory>
+      </AccordionItem>
     </Accordion>
   )
 };
