@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/cv/static/js/main.ed48d32c.chunk.js",
-    "main.js.map": "/cv/static/js/main.ed48d32c.chunk.js.map",
+    "main.js": "/cv/static/js/main.630f98a1.chunk.js",
+    "main.js.map": "/cv/static/js/main.630f98a1.chunk.js.map",
     "runtime-main.js": "/cv/static/js/runtime-main.c17789b0.js",
     "runtime-main.js.map": "/cv/static/js/runtime-main.c17789b0.js.map",
     "static/js/2.9882283a.chunk.js": "/cv/static/js/2.9882283a.chunk.js",
     "static/js/2.9882283a.chunk.js.map": "/cv/static/js/2.9882283a.chunk.js.map",
     "index.html": "/cv/index.html",
-    "precache-manifest.67f6d9249a8c876c79c5fd533b49dcd0.js": "/cv/precache-manifest.67f6d9249a8c876c79c5fd533b49dcd0.js",
+    "precache-manifest.bccf484e30f2a46475b114b98d878869.js": "/cv/precache-manifest.bccf484e30f2a46475b114b98d878869.js",
     "service-worker.js": "/cv/service-worker.js",
     "static/js/2.9882283a.chunk.js.LICENSE.txt": "/cv/static/js/2.9882283a.chunk.js.LICENSE.txt",
     "static/media/logo_onpu.png": "/cv/static/media/logo_onpu.f4bde314.png",
@@ -16,6 +16,6 @@
   "entrypoints": [
     "static/js/runtime-main.c17789b0.js",
     "static/js/2.9882283a.chunk.js",
-    "static/js/main.ed48d32c.chunk.js"
+    "static/js/main.630f98a1.chunk.js"
   ]
 }
