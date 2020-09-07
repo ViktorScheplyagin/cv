@@ -18,7 +18,12 @@ const Summary: React.FC = () => {
   return (
     <Box mx="auto" w={["80%", "90%"]}>
       <Text>
-        I Born 01.12.1995 ({ calcAge(meBorn) } y. o.). Married. Have a son. Also I like street workout.
+        I was born 01.12.1995 ({ calcAge(meBorn) } y. o.).
+        I have 2+ years of commercial development experience.
+        Mostly, I'm an introvert. I like silence and nature.
+        But the sport (street workout) is the best way to get some drive and inspiration portion for me.
+        God, my family, and my relatives gives me motivation and emotions to progress and achieve.
+        Married.
       </Text>
       <Text>
         I like to develop a frontend, using
@@ -31,7 +36,8 @@ const Summary: React.FC = () => {
           name="Redux"
           icon="redux"
           description="A Predictable State Container for JS Apps"
-        /> and
+        />
+        and 
         <TechnologyLabel
           name="TypeScript"
           icon="typescript"
