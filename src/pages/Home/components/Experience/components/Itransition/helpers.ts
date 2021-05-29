@@ -1,4 +1,3 @@
-import { DiJqueryLogo } from 'react-icons/di';
 import { FaHtml5, FaReact } from 'react-icons/fa';
 import { SiReactrouter, SiTypescript, SiMaterialUi } from 'react-icons/si';
 import { SiRedux } from 'react-icons/si';
