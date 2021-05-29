@@ -17,7 +17,7 @@ export const getPortfolioData = () => [
       { name: 'React', icon: FaHtml5 },
       { name: 'Redux', icon: SiRedux },
       { name: 'React Router', icon: SiReactrouter },
-      { name: 'React Bootstrap', icon: DiJqueryLogo },
+      { name: 'React Bootstrap', icon: 'reactBootstrap' },
     ],
   },
   {
