@@ -1,45 +1,16 @@
 {
   "hard": [
-    {
-      "name": "React",
-      "experience": "2 years"
-    },
-    {
-      "name": "Redux",
-      "experience": "1 month"
-    },
-    {
-      "name": "MobX",
-      "experience": "4 months"
-    },
-    {
-      "name": "React Router",
-      "experience": "2 years"
-    },
-    {
-      "name": "Redux Thunk",
-      "experience": "1 month"
-    },
-    {
-      "name": "TypeScript",
-      "experience": "4 months"
-    },
-    {
-      "name": "Jest",
-      "experience": "1 year"
-    },
-    {
-      "name": "Enzyme",
-      "experience": "1 year"
-    },
-    {
-      "name": "React Testing Library",
-      "experience": "4 months"
-    },
-    {
-      "name": "English",
-      "experience": "Intermediate"
-    }
+    { "name": "TypeScript" },
+    { "name": "React" },
+    { "name": "Redux" },
+    { "name": "MobX" },
+    { "name": "React Router" },
+    { "name": "Redux Thunk" },
+    { "name": "Jest" },
+    { "name": "Enzyme" },
+    { "name": "React Testing Library" },
+    { "name": "MirageJS" },
+    { "name": "English (Intermediate)" }
   ],
   "soft": [
     { "name": "Working with boards (Scrum)" },
