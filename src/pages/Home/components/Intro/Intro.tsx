@@ -14,37 +14,32 @@ import {
   SimpleGrid,
 } from '@chakra-ui/core';
 
-
 const textStyles: any = {
-  display: "inline",
-  color: "#fff",
-  fontWeight: "600",
-  textAlign: ["center", null, "left"],
+  display: 'inline',
+  color: '#fff',
+  fontWeight: '600',
+  textAlign: ['center', null, 'left'],
 };
 
 const iconStyles: any = {
-  color: "#fff",
+  color: '#fff',
 };
 
-const Intro: React.FC = () => {
+export const Intro = () => {
   return (
     <SimpleGrid columns={[1, null, 2]}>
-      <Flex align="center" justify="center">
-        <Image
-          src={myPhoto}
-          rounded="full"
-          size={["200px", null, "300px"]}
-        />
+      <Flex align='center' justify='center'>
+        <Image src={myPhoto} rounded='full' size={['200px', null, '300px']} />
       </Flex>
 
       <Flex
-        direction="column"
-        align={["center", null, "flex-start"]}
-        justify="center"
-        textTransform="uppercase"
+        direction='column'
+        align={['center', null, 'flex-start']}
+        justify='center'
+        textTransform='uppercase'
         mt={[8, null, 0]}
       >
-        <Flex direction="column" mb={[8]} {...textStyles}>
+        <Flex direction='column' mb={[8]} {...textStyles}>
           <Heading>Viktor Shcheplyagin</Heading>
           <Box>Strong Junior Front-End Developer</Box>
         </Flex>
@@ -61,23 +56,18 @@ const Intro: React.FC = () => {
           </ListItem>
 
           <ListItem>
-            <ListIcon {...iconStyles} icon="phone" />
+            <ListIcon {...iconStyles} icon='phone' />
             <Box {...textStyles}>+38 066 243 0114</Box>
           </ListItem>
 
           <ListItem>
             <ListIcon {...iconStyles} icon={FaLinkedinIn} />
-            <Link
-              href="https://www.linkedin.com/in/viktor-shh/"
-              isExternal
-            >
+            <Link href='https://www.linkedin.com/in/viktor-shh/' isExternal>
               <Box {...textStyles}>LinkedIn/In/Viktor-Shh</Box>
             </Link>
           </ListItem>
         </List>
       </Flex>
     </SimpleGrid>
-  )
+  );
 };
-
-export default Intro;

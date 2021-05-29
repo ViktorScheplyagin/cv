@@ -1,28 +1,16 @@
 import React from 'react';
-import { 
-  AccordionHeader, 
-  Flex, 
-  AccordionIcon, 
-  AccordionPanel,
-  Text,
-} from '@chakra-ui/core';
+import { AccordionHeader, Flex, AccordionIcon, AccordionPanel, Text } from '@chakra-ui/core';
 
-
-const SkillsCategory: React.FC<{ header: string, }> = ({ header, children }) => {
+export const SkillsCategory: React.FC<{ header: string }> = ({ header, children }) => {
   return (
     <>
       <AccordionHeader>
-        <Flex w="full" justifyContent="space-between">
-          <Text fontWeight="semibold">{header}</Text>
+        <Flex w='full' justifyContent='space-between'>
+          <Text fontWeight='semibold'>{header}</Text>
           <AccordionIcon />
         </Flex>
       </AccordionHeader>
-      <AccordionPanel>
-        {children}
-      </AccordionPanel>
+      <AccordionPanel>{children}</AccordionPanel>
     </>
-  )
-}
-
-
-export default SkillsCategory;
+  );
+};

@@ -1,8 +1,8 @@
 import React from 'react';
 import { ThemeProvider, CSSReset } from '@chakra-ui/core';
 import customTheme from 'styles/theme';
-import HomePage from 'pages/Home';
-import Layout from 'shared_components/Layout';
+import { HomePage } from 'pages';
+import { Layout } from 'shared';
 
 function App() {
   return (

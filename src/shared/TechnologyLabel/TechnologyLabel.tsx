@@ -9,7 +9,7 @@ type TechnologyProps = {
 };
 
 
-const TechnologyLabel: React.FC<TechnologyProps> = ({ name, icon, description }) => {
+export const TechnologyLabel: React.FC<TechnologyProps> = ({ name, icon, description }) => {
   const size = "24px";
 
   return (
@@ -34,5 +34,3 @@ const TechnologyLabel: React.FC<TechnologyProps> = ({ name, icon, description })
     </Tooltip>
   )
 };
-
-export default TechnologyLabel;
