@@ -1,4 +1,4 @@
-import { FaHtml5, FaReact } from 'react-icons/fa';
+import { FaReact } from 'react-icons/fa';
 import { SiReactrouter, SiTypescript, SiMaterialUi } from 'react-icons/si';
 import { SiRedux } from 'react-icons/si';
 import { AiOutlineAntDesign } from 'react-icons/ai';
@@ -13,7 +13,7 @@ export const getPortfolioData = () => [
     ],
     technologies: [
       { name: 'Typescript', icon: SiTypescript },
-      { name: 'React', icon: FaHtml5 },
+      { name: 'React', icon: FaReact },
       { name: 'Redux', icon: SiRedux },
       { name: 'React Router', icon: SiReactrouter },
       { name: 'React Bootstrap', icon: 'reactBootstrap' },
