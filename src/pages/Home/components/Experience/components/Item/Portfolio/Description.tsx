@@ -12,16 +12,9 @@ import {
   Icon,
 } from '@chakra-ui/core';
 import { TechnologyLabel } from 'shared';
+import { PortfolioItem } from '../types';
 
-type DescriptionProps = {
-  title: string;
-  points: string[];
-  technologies: { icon?: any; name: string }[];
-  link: {
-    title?: string;
-    url: string;
-  };
-};
+type DescriptionProps = PortfolioItem;
 
 export const Description: React.FC<DescriptionProps> = ({ title, points, technologies, link }) => {
   return (
@@ -34,12 +27,14 @@ export const Description: React.FC<DescriptionProps> = ({ title, points, technol
       </AccordionHeader>
 
       <AccordionPanel>
-        <Link href={link.url} fontWeight='semibold' color='blue.500' isExternal>
-          <Flex align='center' d='inline-flex'>
-            {link.title || 'View'}
-            <Icon name='external-link' mx={1} my={4} color='gray.800' />
-          </Flex>
-        </Link>
+        {link && (
+          <Link href={link.url} fontWeight='semibold' color='blue.500' isExternal>
+            <Flex align='center' d='inline-flex'>
+              {link.title || 'View'}
+              <Icon name='external-link' mx={1} my={4} color='gray.800' />
+            </Flex>
+          </Link>
+        )}
 
         <Text fontWeight='semibold'>Responsibilities:</Text>
         <List styleType='disk' stylePos='outside' ml={5}>
