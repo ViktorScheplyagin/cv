@@ -41,7 +41,7 @@ export const Intro = () => {
       >
         <Flex direction='column' mb={[8]} {...textStyles}>
           <Heading>Viktor Shcheplyagin</Heading>
-          <Box>Strong Junior Front-End Developer</Box>
+          <Box>Middle Front-End Developer</Box>
         </Flex>
 
         <List spacing={[2]}>
